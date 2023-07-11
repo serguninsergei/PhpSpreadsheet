@@ -46,7 +46,7 @@ class Conditional
      *
      * @return mixed The value of returnIfTrue or returnIfFalse determined by condition
      */
-    public static function statementIf($condition = true, $returnIfTrue = 0, $returnIfFalse = false)
+    public static function statementIf($condition = true, $returnIfTrue = 0, $returnIfFalse = 0)
     {
         $condition = ($condition === null) ? true : Functions::flattenSingleValue($condition);
 

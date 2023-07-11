@@ -50,7 +50,7 @@ class Round
      *         If an array of numbers is passed as the argument, then the returned result will also be an array
      *            with the same dimensions
      */
-    public static function up($number, $digits)
+    public static function up($number, $digits = 0)
     {
         if (is_array($number) || is_array($digits)) {
             return self::evaluateArrayArguments([self::class, __FUNCTION__], $number, $digits);
@@ -86,7 +86,7 @@ class Round
      *         If an array of numbers is passed as the argument, then the returned result will also be an array
      *            with the same dimensions
      */
-    public static function down($number, $digits)
+    public static function down($number, $digits = 0)
     {
         if (is_array($number) || is_array($digits)) {
             return self::evaluateArrayArguments([self::class, __FUNCTION__], $number, $digits);

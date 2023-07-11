@@ -610,7 +610,7 @@ class MathTrig
      *
      * @return array|float|string Rounded Number, or a string containing an error
      */
-    public static function ROUNDUP($number, $digits)
+    public static function ROUNDUP($number, $digits = 0)
     {
         return MathTrig\Round::up($number, $digits);
     }
@@ -629,7 +629,7 @@ class MathTrig
      *
      * @return array|float|string Rounded Number, or a string containing an error
      */
-    public static function ROUNDDOWN($number, $digits)
+    public static function ROUNDDOWN($number, $digits = 0)
     {
         return MathTrig\Round::down($number, $digits);
     }
